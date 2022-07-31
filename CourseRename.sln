@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{196B90A3-762B-4B2A-A44D-97AD5F4D736D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "course-rename", "src\course-rename\course-rename.csproj", "{F799860D-946E-491E-90D0-9CD348CB543D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{601DC55F-BF94-4A5C-97A7-21A7F671D4F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "course-rename.test", "test\course-rename.test\course-rename.test.csproj", "{B4A27CE9-A090-4B1A-958F-25FD868D4DBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F799860D-946E-491E-90D0-9CD348CB543D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F799860D-946E-491E-90D0-9CD348CB543D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F799860D-946E-491E-90D0-9CD348CB543D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F799860D-946E-491E-90D0-9CD348CB543D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4A27CE9-A090-4B1A-958F-25FD868D4DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4A27CE9-A090-4B1A-958F-25FD868D4DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4A27CE9-A090-4B1A-958F-25FD868D4DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4A27CE9-A090-4B1A-958F-25FD868D4DBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F799860D-946E-491E-90D0-9CD348CB543D} = {196B90A3-762B-4B2A-A44D-97AD5F4D736D}
+		{B4A27CE9-A090-4B1A-958F-25FD868D4DBE} = {601DC55F-BF94-4A5C-97A7-21A7F671D4F1}
+	EndGlobalSection
+EndGlobal
