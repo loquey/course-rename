@@ -8,12 +8,12 @@ public class IndexLastParserTest
     [InlineData("lesson1.mp4",  "1", "lesson.mp4")]
     [InlineData("lesson - 1.mp4",  "1", "lesson.mp4")]
     [InlineData("lesson 1.mp4",  "1", "lesson.mp4")]
-    [InlineData("lesson01.mp4",  "1", "lesson.mp4")]
-    [InlineData("lesson - 01.mp4",  "1", "lesson.mp4")]
-    [InlineData("lesson 01.mp4",  "1", "lesson.mp4")]
-    [InlineData("lesson001.mp4",  "1", "lesson.mp4")]
-    [InlineData("lesson 001.mp4",  "1", "lesson.mp4")]
-    [InlineData("lesson - 001.mp4",  "1", "lesson.mp4")]
+    [InlineData("lesson01.mp4",  "01", "lesson.mp4")]
+    [InlineData("lesson - 01.mp4",  "01", "lesson.mp4")]
+    [InlineData("lesson 01.mp4",  "01", "lesson.mp4")]
+    [InlineData("lesson001.mp4",  "001", "lesson.mp4")]
+    [InlineData("lesson 001.mp4",  "001", "lesson.mp4")]
+    [InlineData("lesson - 001.mp4",  "001", "lesson.mp4")]
     public void IndexLastParse_ParseCorrectFilename_ShouldPass(string filename, string index, string parsedName)
     {
         // Given

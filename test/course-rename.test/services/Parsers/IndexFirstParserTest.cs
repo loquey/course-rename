@@ -35,10 +35,9 @@ public class IndexFirstParserTest
         var parser = new IndexFirstParser();
 
         // When
-        var parseResult = parser.Parse("lesson01.mp4");
+        var parseResult = parser.Parse("lesson.mp4");
 
         // Then
         Assert.NotEqual("1", parseResult.Index);
-        Assert.NotEqual("lesson.mp4", parseResult.Filename);
     }
 }
