@@ -15,6 +15,6 @@ public class NormalizedNamingStrategyTest
         var filename = strategy.FormatName(1, "fname", "mp4");
 
         // Then
-        Assert.Equal("001", "001 - fname.mp4");
+        Assert.Equal("001 - fname.mp4", filename);
     }
 }

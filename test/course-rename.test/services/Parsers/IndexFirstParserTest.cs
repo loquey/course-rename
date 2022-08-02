@@ -6,15 +6,15 @@ namespace course_rename.test.services.Parsers;
 public class IndexFirstParserTest
 {
     [Theory]
-    [InlineData("01lesson.mp4",  "1", "lesson.mp4")]
-    [InlineData("01 lesson.mp4",  "1", "lesson.mp4")]
-    [InlineData("01 - lesson.mp4",  "1", "lesson.mp4")]
+    [InlineData("01lesson.mp4",  "01", "lesson.mp4")]
+    [InlineData("01 lesson.mp4",  "01", "lesson.mp4")]
+    [InlineData("01 - lesson.mp4",  "01", "lesson.mp4")]
     [InlineData("1lesson.mp4",  "1", "lesson.mp4")]
     [InlineData("1  lesson.mp4",  "1", "lesson.mp4")]
-    [InlineData("001lesson.mp4",  "1", "lesson.mp4")]
-    [InlineData("001  lesson.mp4",  "1", "lesson.mp4")]
-    [InlineData("001 - lesson.mp4",  "1", "lesson.mp4")]
     [InlineData("1 - lesson.mp4",  "1", "lesson.mp4")]
+    [InlineData("001lesson.mp4",  "001", "lesson.mp4")]
+    [InlineData("001  lesson.mp4",  "001", "lesson.mp4")]
+    [InlineData("001 - lesson.mp4",  "001", "lesson.mp4")]
     public void IndexFirstParse_ParseCorrectFilename_ShouldPass(string filename, string index, string parsedName)
     {
         // Given
