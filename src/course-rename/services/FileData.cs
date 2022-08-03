@@ -17,7 +17,7 @@ public struct FileData
         var parseResult = parser.Parse(fileInfo.Name);
         Index = int.Parse(parseResult.Index);
         IndexString = parseResult.Index;
-        Filename = parseResult.Filename;
+        Filename = parseResult.Filename[0..(parseResult.Filename.LastIndexOf('.'))];
         Extension = fileInfo.Extension;
         _DirPath = fileInfo.DirectoryName ?? string.Empty;
     }
